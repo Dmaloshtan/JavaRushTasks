@@ -25,7 +25,7 @@ public class Solution {
         try (FileOutputStream fileOutputStream = new FileOutputStream(pathFirstFile);
              FileInputStream fileInputStream1 = new FileInputStream(pathSecondFile);
              FileInputStream fileInputStream2 = new FileInputStream(pathThirdFile)) {
-            
+
             while (fileInputStream1.available() > 0) {
                 fileOutputStream.write(fileInputStream1.read());
             }
